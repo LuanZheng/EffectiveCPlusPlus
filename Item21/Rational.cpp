@@ -11,7 +11,7 @@ Rational::~Rational()
 }
 
 
-Rational operator*(const Rational& multiplicator1, const Rational& multiplicator2)
+const Rational operator*(const Rational& multiplicator1, const Rational& multiplicator2)
 {
 	return Rational(multiplicator1.m_Numerator * multiplicator2.m_Numerator, 
 		multiplicator1.m_Denominator * multiplicator2.m_Denominator);
