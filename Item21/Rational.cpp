@@ -10,6 +10,21 @@ Rational::~Rational()
 
 }
 
+int Rational::numerator() const
+{
+	return m_Numerator;
+}
+
+int Rational::denominator() const
+{
+	return m_Denominator;
+}
+
+//const Rational Rational::operator*(const Rational & rhs) const
+//{
+//	return Rational(this->m_Numerator*rhs.m_Numerator,this->m_Denominator*rhs.m_Denominator);
+//}
+
 
 const Rational operator*(const Rational& multiplicator1, const Rational& multiplicator2)
 {
