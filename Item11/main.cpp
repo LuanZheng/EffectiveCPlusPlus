@@ -21,5 +21,10 @@ int main()
 
 	unsigned int dsize = sizeof(d);   //dsize is 8
 
+	//Item 27,有时候下面指针值并不相同，这种情况下会有个偏移量在运行期被施行与Derived身上。请注意，是有时候。
+	//且不同编译器的行为可能不同。
+	Derived d2;
+	Base* pb = &d2;
+
 	return 0;
 }
